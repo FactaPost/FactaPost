@@ -1,0 +1,68 @@
+:root
+{
+    --accent: #d02;
+}
+
+html, body, header, main, footer, div, section, span, ul, li, a, h1, h2, h3, h4, h5, h6, p, i, b
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+html
+{
+    color: #111111;
+    background-color: #eeeeee;
+}
+
+body
+{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, main, footer
+{
+    padding: 32px;
+}
+
+a, a:active, a:hover, a:visited
+{
+    text-decoration: none;
+    color: unset;
+}
+
+.openSansGlobal
+{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: unset;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.headerLogo img
+{
+    height: 24px;
+}
+
+.mainSocialLinks
+{
+    display: inline-flex;
+    gap: 8px;
+}
+.mainSocialLinks li
+{
+    display: block;
+}
+.mainSocialLinks a
+{
+    display: block;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
