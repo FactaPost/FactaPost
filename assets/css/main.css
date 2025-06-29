@@ -1,6 +1,6 @@
 :root
 {
-    --accent: #d02;
+    --accentColor: #d02;
 }
 
 html, body, header, main, footer, div, section, span, ul, li, a, h1, h2, h3, h4, h5, h6, p, i, b
@@ -14,6 +14,7 @@ html
 {
     color: #111111;
     background-color: #eeeeee;
+    transition: all ease 1s;
 }
 
 body
@@ -25,7 +26,14 @@ body
 
 header, main, footer
 {
-    padding: 32px;
+    padding: 64px;
+}
+@media(orientation: portrait)
+{
+    header, main, footer
+    {
+        padding: 32px;
+    }
 }
 
 a, a:active, a:hover, a:visited
@@ -43,26 +51,81 @@ a, a:active, a:hover, a:visited
   font-variation-settings: "wdth" 100;
 }
 
+h1 {
+  font-size: 2.5rem;    /* 40px if base is 16px */
+  line-height: 3rem;    /* 48px */
+}
+
+h2 {
+  font-size: 2rem;      /* 32px */
+  line-height: 2.5rem;  /* 40px */
+}
+
+h3 {
+  font-size: 1.5rem;    /* 24px */
+  line-height: 2rem;    /* 32px */
+}
+
+h4 {
+  font-size: 1.25rem;   /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+h5 {
+  font-size: 1rem;      /* 16px */
+  line-height: 1.5rem;  /* 24px */
+}
+
+h6 {
+  font-size: 0.875rem;  /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+p {
+  font-size: 1rem;      /* 16px */
+  line-height: 1.5rem;  /* 24px */
+}
+
+a {
+  font-size: 1rem;      /* 16px */
+  line-height: 1.5rem;  /* 24px */
+}
+
 .headerLogo img
 {
     height: 24px;
 }
 
-.mainSocialLinks
+.footerSocialLinks
 {
+    margin-top: 8px;
+    margin-bottom: 8px;
     display: inline-flex;
     gap: 8px;
 }
-.mainSocialLinks li
+.footerSocialLinks li
 {
     display: block;
 }
-.mainSocialLinks a
+.footerSocialLinks a
 {
     display: block;
-    padding: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color ease 1s;
+}
+.footerSocialLinks a:active,.footerSocialLinks a:hover
+{
+    background-color: var(--accentColor);
+    color: #eeeeee;
+}
+
+.footerCopyrightNotice
+{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 0.9rem;
 }
