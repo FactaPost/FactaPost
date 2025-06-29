@@ -13,13 +13,15 @@ html, body, header, main, footer, div, section, span, ul, li, a, h1, h2, h3, h4,
 html
 {
     color: #111111;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     transition: all ease 1s;
     transition: color ease 1s;
 }
 
 body
 {
+	color: #111111;
+    background-color: #eeeeee;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
