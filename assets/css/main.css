@@ -15,6 +15,7 @@ html
     color: #111111;
     background-color: #eeeeee;
     transition: all ease 1s;
+    transition: color ease 1s;
 }
 
 body
@@ -52,33 +53,33 @@ a, a:active, a:hover, a:visited
 }
 
 h1 {
-  font-size: 2.5rem;    /* 40px if base is 16px */
-  line-height: 3rem;    /* 48px */
-}
-
-h2 {
-  font-size: 2rem;      /* 32px */
+  font-size: 2rem;      /* 32px if base is 16px */
   line-height: 2.5rem;  /* 40px */
 }
 
+h2 {
+  font-size: 1.8rem;
+  line-height: 2.35rem;
+}
+
 h3 {
+  font-size: 1.65rem;
+  line-height: 2.2rem;
+}
+
+h4 {
   font-size: 1.5rem;    /* 24px */
   line-height: 2rem;    /* 32px */
 }
 
-h4 {
-  font-size: 1.25rem;   /* 20px */
-  line-height: 1.75rem; /* 28px */
-}
-
 h5 {
-  font-size: 1rem;      /* 16px */
-  line-height: 1.5rem;  /* 24px */
+  font-size: 1.4rem;
+  line-height: 1.6rem;
 }
 
 h6 {
-  font-size: 0.875rem;  /* 14px */
-  line-height: 1.25rem; /* 20px */
+  font-size: 1.2rem;
+  line-height: 1.55rem;
 }
 
 p {
@@ -91,15 +92,41 @@ a {
   line-height: 1.5rem;  /* 24px */
 }
 
+h1, h2, h3
+{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+h4, h5, h6
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+p
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #333333;
+}
+
 .headerLogo img
 {
     height: 24px;
 }
 
+footer
+{
+	text-align: center;
+}
+
 .footerSocialLinks
 {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     display: inline-flex;
     gap: 8px;
 }
@@ -114,7 +141,6 @@ a {
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.2);
     transition: background-color ease 1s;
 }
 .footerSocialLinks a:active,.footerSocialLinks a:hover
