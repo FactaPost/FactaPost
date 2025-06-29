@@ -41,15 +41,26 @@ a, a:active, a:hover, a:visited
 {
     text-decoration: none;
     color: unset;
+	padding: 0;
+	margin: 0;
+	border: none;
 }
 
 .openSansGlobal
 {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: unset;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: unset;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+.accentText
+{
+	color: var(--accentColor);
+}
+.accentBackground
+{
+	background-color: var(--accentColor);
 }
 
 h1 {
