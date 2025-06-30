@@ -17,11 +17,17 @@ html
     transition: all ease 1s;
     transition: color ease 1s;
 }
+@media(prefers-color-scheme: dark)
+{
+	html
+	{
+		color: #aaaaaa;
+		background-color: #111111;
+	}
+}
 
 body
 {
-	color: #111111;
-    background-color: #ffffff;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
