@@ -167,7 +167,6 @@ footer
 
 .footerCopyrightNotice
 {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 16px;
     font-size: 0.9rem;
 }
