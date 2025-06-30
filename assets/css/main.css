@@ -17,6 +17,7 @@ html
     transition: all ease 1s;
     transition: color ease 1s;
 }
+/**
 @media(prefers-color-scheme: dark)
 {
 	html
@@ -25,6 +26,7 @@ html
 		background-color: #111111;
 	}
 }
+**/
 
 body
 {
