@@ -141,7 +141,8 @@ footer
     margin-top: 4px;
     margin-bottom: 4px;
     display: inline-flex;
-    gap: 8px;
+    gap: 4px;
+	font-size: 12rem;
 }
 .footerSocialLinks li
 {
@@ -149,6 +150,7 @@ footer
 }
 .footerSocialLinks a
 {
+	font-size: 1.2rem;
     display: block;
     padding: 8px;
     padding-left: 12px;
